@@ -1,0 +1,83 @@
+import 'element-plus/lib/theme-chalk/index.css'
+import 'element-plus/lib/theme-chalk/base.css'
+import {
+  ElButton,
+  ElForm,
+  ElFormItem,
+  ElInput,
+  ElRadio,
+  ElTabs,
+  ElTabPane,
+  ElCheckbox,
+  ElLink,
+  ElContainer,
+  ElHeader,
+  ElMain,
+  ElAside,
+  ElMenu,
+  ElMenuItem,
+  ElMenuItemGroup,
+  ElSubmenu,
+  ElDropdown,
+  ElDropdownMenu,
+  ElDropdownItem,
+  ElAvatar,
+  ElCol,
+  ElRow,
+  ElSelect,
+  ElOption,
+  ElDatePicker,
+  ElBreadcrumb,
+  ElBreadcrumbItem,
+  ElTable,
+  ElTableColumn,
+  ElPagination,
+  ElImage,
+  ElDialog,
+  ElTree,
+  ElCard
+} from 'element-plus'
+import { App } from 'vue'
+
+export function registerElement(app: App) {
+  const components = [
+    ElButton,
+    ElForm,
+    ElFormItem,
+    ElInput,
+    ElRadio,
+    ElTabs,
+    ElTabPane,
+    ElCheckbox,
+    ElLink,
+    ElContainer,
+    ElHeader,
+    ElMain,
+    ElAside,
+    ElMenu,
+    ElMenuItem,
+    ElMenuItemGroup,
+    ElSubmenu,
+    ElDropdown,
+    ElDropdownMenu,
+    ElDropdownItem,
+    ElAvatar,
+    ElCol,
+    ElRow,
+    ElSelect,
+    ElOption,
+    ElDatePicker,
+    ElBreadcrumb,
+    ElBreadcrumbItem,
+    ElTable,
+    ElTableColumn,
+    ElPagination,
+    ElImage,
+    ElDialog,
+    ElTree,
+    ElCard
+  ]
+  for (const cpn of components) {
+    app.component(cpn.name, cpn)
+  }
+}

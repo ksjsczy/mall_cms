@@ -6,4 +6,8 @@
 **/*.svg
 **/*.sh
 
+/src/views/*
+/src/components/*
+/src/base-ui/*
+
 /public/*
